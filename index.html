@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b2d6b" />
+    <meta
+      name="description"
+      content="Campus incident reporting and announcements for City of Malabon University"
+    />
+    <title>CMUAlert</title>
+    <link rel="icon" href="assets/cmu-logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/access.css" />
+    <link rel="stylesheet" href="css/guide.css" />
+    <script defer src="guide.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="app">
+      <div class="initial-loading" role="status" aria-label="Loading CMUAlert">
+        <span class="button-spinner" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div id="toasts" class="toasts" aria-live="polite" aria-atomic="false"></div>
+    <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+    <dialog id="guide-dialog" class="guide-dialog" aria-labelledby="guide-title" aria-describedby="guide-copy"></dialog>
+    <noscript>Enable JavaScript to use CMUAlert.</noscript>
+  </body>
+</html>
